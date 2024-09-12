@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muestreo de Datos PLC</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+    <h1>Muestreo de Datos de PLC</h1>
+
+    <div class="controls">
+        <button id="startBtn">Marcha</button>
+        <button id="stopBtn">Paro</button>
+        <label for="setPoint">Set Point:</label>
+        <input type="number" id="setPoint" step="0.01" placeholder="Ingrese valor">
+    </div>
+
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Hora Actual</th>
+                <th>Valor Actual</th>
+                <th>Update Trigger</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>--:--:--</td>
+                <td>0.00</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button id="resetTableBtn">Resetear Tabla</button>
+</body>
+</html>
